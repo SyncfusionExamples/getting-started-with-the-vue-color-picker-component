@@ -38,7 +38,16 @@ export default {
     
 <div id="wrapper">
     <h4>Choose a Color</h4>
-    <ejs-colorpicker cssClass="e-hide-value" :disabled="true"></ejs-colorpicker>
+    <ejs-colorpicker value="035a" mode="Palette" :inline="true" 
+                                  :modeSwitcher="false"
+                                  :showButtons="false"
+                                  :noColor="true"
+                                  :presetColors="customColors"
+                                  :columns="4"
+                                  :beforeTileRender="tileRender"
+                                  :change="onChange"></ejs-colorpicker>
+                                  
+    <!-- <ejs-colorpicker cssClass="e-hide-value" :disabled="true"></ejs-colorpicker> -->
 </div>
 </template>
 
